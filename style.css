@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #f0eff4;
@@ -22,6 +20,7 @@ body {
   .course_card {
     margin: 25px 10px;
     position: relative;
+    height: 200px;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -94,6 +93,7 @@ body {
 .charity_card {
     margin: 25px 10px;
     position: relative;
+    height: 500px;
     display: flex;
     flex-direction: column;
     min-width: 0;
@@ -104,12 +104,55 @@ body {
     background-clip: border-box;
     transition: 0.25s ease-in-out;
   }
-  .charity_card_content {
-    padding: 16px;
+  .charity-card-img {
+    
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hiden;
+    position: relative;
+    margin-bottom: 10px;
   }
+  .charity-card-img img {
+    height: 150px;
+    width: 100%;
+    transition: 0.25s all;
+    
+  }
+  .charity-card-img  img:hover {
+    transform: translateY(-3%);
+  }
+  .ctg {
+    width: 150px;
+    border-radius: 25px;
+    margin: 10px;
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+  }
+  .ctg > svg{
+    margin: 3px;
+  }
+  .charity_card_content {
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .charity_card_content title {
+    font-weight: bold;
+  }
+
   .charity_card_footer {
-    padding: 10px 0px;
     margin: 5px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .charity_card_footer p {
+    position: ab;
+    color: #343045;
+    padding: 0px;
+    font-size: 16px;
   }
   .charity_card_footer a {
     margin: 0 5px 0 0;
@@ -127,3 +170,105 @@ body {
     border-top-left-radius: 0.375rem;
     border-top-right-radius: 0.375rem;
   }
+
+  #progresscd1 {
+    background: #f0eff4;
+    border-radius: 13px;
+    height: 10px;
+    width: 350px;
+    padding: 1px;
+}
+
+  #progresscd1:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 70%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progresscd2 {
+  background: #f0eff4;
+  border-radius: 13px;
+  height: 10px;
+  width: 350px;
+  padding: 1px;
+}
+
+#progresscd2:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 40%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+#progresscd3 {
+  background: #f0eff4;
+  border-radius: 13px;
+  height: 10px;
+  width: 350px;
+  padding: 1px;
+}
+
+#progresscd3:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 50%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+#progresscd4 {
+  background: #f0eff4;
+  border-radius: 13px;
+  height: 10px;
+  width: 350px;
+  padding: 1px;
+}
+
+#progresscd4:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 30%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+
+#progresscd5 {
+  background: #f0eff4;
+  border-radius: 13px;
+  height: 10px;
+  width: 350px;
+  padding: 1px;
+}
+
+#progresscd5:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 20%;
+  height: 100%;
+  border-radius: 9px;
+}
+
+#progresscd6 {
+  background: #f0eff4;
+  border-radius: 13px;
+  height: 10px;
+  width: 350px;
+  padding: 1px;
+}
+
+#progresscd6:after {
+  content: '';
+  display: block;
+  background: orange;
+  width: 90%;
+  height: 100%;
+  border-radius: 9px;
+}
